@@ -1,0 +1,67 @@
+public class Fraction{
+  public static void main(String[ ] args) {
+    
+    Fraction fraction1;
+    FractionIterator fractioniterator1;
+    fraction1 = new Fraction(16,32);
+    fractioniterator1 = new FractionIterator();
+    
+    
+    
+    System.out.println(fraction1.gcd(16,32));
+    
+    for(int counter = 0; counter < 50; counter++) {
+      System.out.println(fractioniterator1.next());
+    }
+    
+  }
+  int numerator;
+  int denominator;
+  
+  public Fraction(int tempnumerator, int tempdenominator){
+    
+    numerator = tempnumerator;
+    denominator = tempdenominator;
+    
+    
+  }
+  public static int gcd(int nom, int dem){
+    
+    if(Math.min(nom,dem) == 1) {
+      return(1);
+    }
+    
+    for(int factor = 2; factor <= Math.min(nom, dem); factor++) {
+      if(nom % factor == 0 && dem % factor == 0) {
+        //System.out.println(factor);
+        return(factor*gcd((nom/factor), (dem/factor)));
+      }
+    }
+    return(1);
+  }
+  
+  public int getNumberator(){
+    
+    return(numerator);
+  }
+  public int getDenominator(){ 
+    return(denominator);
+    
+  }
+  public boolean isImpropor(){ 
+    return(numerator > denominator);
+  }
+  public float toFloat(){ 
+    return (float)(numerator) / (float)(denominator);
+  }
+  public String toString(){ 
+    return(numerator + "/" + denominator);
+  }
+  public Fraction plus(Fraction other){ 
+    return(null);
+  }
+  public Fraction times(Fraction other){ 
+    return new Fraction(numerator*other.numerator, denominator*other.denominator);
+  }
+  
+}

@@ -1,0 +1,37 @@
+public class CustomLinkedList{
+  //Instance Variables
+  Node root;
+  int size;
+  
+  
+  //Constructors
+  public CustomLinkedList() {
+    root = new Node;
+    size = 0;
+    
+  }
+  
+  
+  
+  //Methods
+  
+  
+  
+  //Anything else
+  
+  private static class Node{
+    //Instance Variables
+    Node next;
+    Object value;
+    
+    //Constructor
+    private Node(Object value) {
+      this.value = value;
+      next = null;
+    }
+    
+    
+    //Methods
+  }
+  
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="false" main="BugRunner" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file name="DigBug.java" package="" timestamp="23-Sep-2016 13:50:52">
+        <select from="0" to="0"/>
+        <scroll column="920" row="0"/>
+      </file>
+      <file name="BoxBug.java" package="" timestamp="20-Sep-2016 13:51:54">
+        <select from="0" to="0"/>
+        <scroll column="920" row="0"/>
+      </file>
+      <file name="BoxBugRunner.java" package="" timestamp="20-Sep-2016 13:52:18">
+        <select from="0" to="0"/>
+        <scroll column="920" row="0"/>
+      </file>
+      <file name="BugRunner.java" package="" timestamp="23-Sep-2016 13:58:52">
+        <select from="0" to="0"/>
+        <scroll column="920" row="0"/>
+      </file>
+      <file name="Arrow.java" package="" timestamp="27-Sep-2016 13:57:04">
+        <select from="0" to="0"/>
+        <scroll column="920" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath>
+      <file absolute="false" name="../GridWorldCode/gridworld.jar"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
