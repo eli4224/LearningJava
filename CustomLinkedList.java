@@ -22,7 +22,7 @@ public class CustomLinkedList{
     size++;
   }
   public Object get(int index){
-    if(index >= size || index < 0) throw new IndexOutOfBoundsException(index.toString());
+    if(index >= size || index < 0) throw new IndexOutOfBoundsException(((Integer) index).toString());
     Node tempnode = root;
     for(int i = 0; i < index; i++){
       tempnode = tempnode.next;  
@@ -31,9 +31,9 @@ public class CustomLinkedList{
   }
   
   public void set(Object value, int index) {
-    if(index >= size || index < 0) throw new IndexOutOfBoundsException(index.toString());
+    if(index >= size || index < 0) throw new IndexOutOfBoundsException(((Integer) index).toString());
     Node tempnode = root;
-    for(int i = 0; i < index; i++;) {
+    for(int i = 0; i < index; i++) {
       tempnode = tempnode.next;
     }
     tempnode.value = value;
@@ -41,14 +41,14 @@ public class CustomLinkedList{
   }
   
   public void insert(Object value, int index) {
-    if(index >= size || index < 0) throw new IndexOutOfBoundsException(index.toString());
-    if(index = 0) {
+    if(index >= size || index < 0) throw new IndexOutOfBoundsException(((Integer) index).toString());
+    if(index == 0) {
       add(value);
       return;
     }
     Node tempnode = root;
     Node node = new Node(value);
-    if(int i = 1; i < index; i++) {
+    for(int i = 1; i < index; i++) {
       tempnode = tempnode.next;
     }
     node.next = tempnode.next;
@@ -56,18 +56,19 @@ public class CustomLinkedList{
     size++;
     return;
   }
-   //Anything else
-  class Node{
-    //Instance Variables
-    Node next;
-    Object value;
-    
-    //Constructor
-    Node(Object value) {
-      this.value = value;
-      next = null;
-    }
-    
-    
-    //Methods
+}
+//Anything else
+class Node{
+  //Instance Variables
+  Node next;
+  Object value;
+  
+  //Constructor
+  Node(Object value) {
+    this.value = value;
+    next = null;
   }
+  
+  
+  //Methods
+}
